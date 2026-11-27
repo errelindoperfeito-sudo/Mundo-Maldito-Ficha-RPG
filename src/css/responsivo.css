@@ -1,0 +1,150 @@
+/* Responsividade (celular) */
+
+/* --- RESPONSIVIDADE DO TOPO --- */
+
+/* ==========================
+   RESPONSIVIDADE DO TOPO
+   ========================== */
+
+@media (max-width: 768px) {
+
+    .section-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .moldura-foto {
+        width: 130px;
+        height: 170px;
+    }
+
+    .foto-perfil-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dados-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    .ocupacao-select-wrapper {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .ocupacao-select-wrapper select {
+        flex: 1;
+    }
+}
+
+/* --- RESPONSIVIDADE (300px a 450px) --- */
+
+@media (max-width: 450px) {
+    /* ... (mantenha os códigos anteriores de container, título e grid) ... */
+
+    .ficha-container {
+        margin: 10px;
+        padding: 15px;
+        width: calc(100% - 20px);
+    }
+
+    .titulo-paranormal {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+
+    .section-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .moldura-foto {
+        width: 140px;
+        height: 180px;
+    }
+
+    .dados-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .tabs-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tab-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        flex: 1;
+        min-width: 110px;
+    }
+
+    .atributos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .atrib-item {
+        clip-path: none; 
+        padding: 8px;
+    }
+
+    .atrib-item h3 { font-size: 0.75rem; }
+    .atrib-item input { font-size: 1.5rem; }
+
+    .status-bars-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bar-controls {
+        justify-content: center;
+    }
+
+    .pericias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pericia-item label {
+        font-size: 0.85rem;
+    }
+
+    /* --- AJUSTE REFINADO DO DIÁRIO --- */
+    .diario-item textarea {
+        height: 380px;      /* Aumentei um pouco a altura já que o texto é menor */
+        font-size: 0.85rem; /* Texto menor e mais elegante para mobile */
+        line-height: 1.4;   /* Espaçamento confortável, sem ser exagerado */
+        padding: 10px;      /* Menos padding lateral para ganhar espaço */
+        letter-spacing: 0.5px;
+    }
+
+    .diario-item label {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        color: var(--vermelho-brilhante);
+    }
+}
+
+/* Ajustes para telas mínimas (300px - 320px) */
+@media (max-width: 320px) {
+    .titulo-paranormal {
+        font-size: 1.4rem;
+    }
+
+    .atrib-item input {
+        font-size: 1.2rem;
+    }
+
+    .diario-item textarea {
+        height: 320px;
+        font-size: 0.8rem; /* Ainda menor em telas ultra-compactas */
+    }
+}

@@ -1,0 +1,15 @@
+/* Arquivo principal: a ordem dos imports preserva a cascata original */
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./header.css');
+@import url('./topo.css');
+@import url('./tabs.css');
+@import url('./atributos.css');
+@import url('./barras.css');
+@import url('./pericias.css');
+@import url('./diario.css');
+@import url('./classes.css');
+@import url('./modal.css');
+@import url('./responsivo.css');
+@import url('./ocupacao.css');
+@import url('./regras.css');

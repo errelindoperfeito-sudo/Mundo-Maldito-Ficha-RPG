@@ -1,0 +1,12 @@
+/* Variáveis de design (cores e fontes) */
+
+/* Variáveis de Design */
+:root {
+    --vermelho-sangue: #660000;
+    --vermelho-brilhante: #ff1a1a;
+    --preto-corvo: #050505;
+    --preto-painel: #121212;
+    --borda-ritual: #330000;
+    --texto-principal: #e0e0e0;
+    --font-paranormal: 'Playfair Display', serif;
+}

@@ -1,0 +1,38 @@
+/* Elementos novos da atualização de regras */
+
+.atrib-info {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.65rem;
+    color: #888;
+}
+
+.max-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 0.7rem;
+    color: #888;
+}
+
+.btn-control-mini {
+    width: 22px;
+    height: 22px;
+    font-size: 1rem;
+}
+
+.pericias-resumo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 25px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.pericias-resumo strong { color: var(--vermelho-brilhante); }
+.pericias-resumo strong.excedido { color: #ff9900; }
+.pericias-aviso { color: #ff9900; }

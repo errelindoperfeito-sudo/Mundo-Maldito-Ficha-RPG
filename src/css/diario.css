@@ -1,0 +1,53 @@
+/* Aba de diário */
+
+/* Layout da Grid do Diário */
+.diario-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.diario-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.diario-item label {
+    font-family: var(--font-paranormal);
+    font-size: 0.9rem;
+    color: var(--vermelho-brilhante);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilização Geral das Textareas */
+.diario-item textarea {
+    width: 100%;
+    height: 250px; /* Altura ajustada para caber no layout 2x2 */
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--texto-principal);
+    border: 1px solid var(--vermelho-sangue);
+    padding: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    resize: none;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.diario-item textarea:focus {
+    border-color: var(--vermelho-brilhante);
+    background: rgba(20, 0, 0, 0.6);
+    box-shadow: inset 0 0 10px rgba(102, 0, 0, 0.5);
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 768px) {
+    .diario-grid {
+        grid-template-columns: 1fr; /* Uma coluna apenas em telas pequenas */
+    }
+}

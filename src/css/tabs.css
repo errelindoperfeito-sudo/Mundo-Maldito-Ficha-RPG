@@ -1,0 +1,43 @@
+/* Navegação e conteúdo das abas */
+
+/* Navegação por Tabs */
+.tabs-nav {
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--vermelho-sangue);
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-family: var(--font-paranormal);
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    color: var(--vermelho-brilhante);
+    border-bottom: 3px solid var(--vermelho-brilhante);
+    background: linear-gradient(to top, rgba(102, 0, 0, 0.2), transparent);
+}
+
+/* Tab Content Visibility */
+.tab-content { 
+    display: none; 
+}
+
+.tab-content.active { 
+    display: block !important; 
+}
+
+.titulo-secao-interna {
+    font-family: var(--font-paranormal);
+    color: var(--vermelho-brilhante);
+    border-bottom: 1px solid var(--vermelho-sangue);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}

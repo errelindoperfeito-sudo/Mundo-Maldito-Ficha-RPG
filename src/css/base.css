@@ -1,0 +1,48 @@
+/* Reset, body, overlay, container da ficha, spinners e foco */
+
+/* Reset e Body */
+* { box-sizing: border-box; }
+body {
+    background-color: var(--preto-corvo);
+    color: var(--texto-principal);
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                      url('https://www.transparenttextures.com/patterns/dark-matter.png');
+}
+
+/* Efeito Visual de Fundo */
+.overlay-efeito {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, transparent 20%, black 150%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ficha-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: var(--preto-painel);
+    border: 1px solid var(--vermelho-sangue);
+    box-shadow: 0 0 30px rgba(0,0,0,1), inset 0 0 15px rgba(102, 0, 0, 0.2);
+}
+
+/* Remover setas (spinners) do input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Para Firefox */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+}

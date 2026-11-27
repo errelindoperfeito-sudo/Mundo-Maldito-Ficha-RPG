@@ -1,0 +1,111 @@
+/* Aba de perícias */
+
+/* Estilização da Aba de Perícias */
+.pericias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.pericia-card {
+    background: rgba(20, 0, 0, 0.5);
+    border-left: 3px solid var(--vermelho-sangue);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.pericia-card:hover {
+    background: rgba(60, 0, 0, 0.3);
+    border-left-color: var(--vermelho-brilhante);
+}
+
+.pericia-nome {
+    flex: 1;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pericia-val {
+    width: 35px;
+    background: #000;
+    border: 1px solid var(--borda-ritual);
+    color: var(--vermelho-brilhante);
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+
+/* Checkbox estilizado (Sangue) */
+.pericia-card input[type="checkbox"] {
+    accent-color: var(--vermelho-brilhante);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+
+.pericias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.pericia-item {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #220000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.pericia-item:hover {
+    border-color: var(--vermelho-sangue);
+    background: rgba(30, 0, 0, 0.3);
+}
+
+.pericia-item label {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input[type="number"] {
+    width: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--vermelho-sangue);
+    color: var(--vermelho-brilhante);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input-group input[type="checkbox"] {
+    accent-color: var(--vermelho-brilhante);
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.pericia-item input {
+    width: 25px;
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+    border: 1px solid var(--vermelho-sangue);
+    background-color: black;
+    color: var(--vermelho-brilhante);
+}

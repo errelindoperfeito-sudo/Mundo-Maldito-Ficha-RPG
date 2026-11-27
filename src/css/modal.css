@@ -1,0 +1,48 @@
+/* Modal de ocupação */
+
+/* Estilo do Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 10% auto;
+    padding: 25px;
+    border: 2px solid var(--borda-ritual); /* Um laranja/vermelho pro clima apocalíptico */
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    font-family: 'DM Serif Text', serif;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+    position: relative;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover { color: var(--vermelho-brilhante); }
+
+.modal-body h3 {
+    color: var(--vermelho-brilhante);
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.modal-footer {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+}

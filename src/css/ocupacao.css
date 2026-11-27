@@ -1,0 +1,42 @@
+/* Seletor de ocupação e botão mini (precisa vir depois de classes.css) */
+
+.ocupacao-select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ocupacao-select-wrapper select {
+    flex: 1;
+}
+
+/* Botão mini de informação */
+.btn-info-mini {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--vermelho-sangue);
+    background: #0a0a0a;
+
+    color: var(--vermelho-brilhante);
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.btn-info-mini:hover {
+    background: var(--vermelho-sangue);
+    color: white;
+
+    box-shadow: 0 0 12px var(--vermelho-brilhante);
+}

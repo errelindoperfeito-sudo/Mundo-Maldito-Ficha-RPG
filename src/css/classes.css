@@ -1,0 +1,110 @@
+/* Cores por classe e botão de info */
+
+/* --- SISTEMA DE CORES POR CLASSE --- */
+
+/* Estilo Base do Botão Info Classe */
+.info-classe-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn-info-classe {
+    background: transparent;
+    border: 1px solid var(--vermelho-sangue);
+    color: var(--texto-principal);
+    padding: 30px;
+    font-family: var(--font-paranormal);
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-info-classe:hover {
+    background: var(--vermelho-sangue);
+    box-shadow: 0 0 15px var(--vermelho-sangue);
+}
+
+/* Modificadores de Classe (O JS aplicará estas classes ao .ficha-container) */
+
+/* Combatente - Vermelho Vibrante */
+.ficha-container.classe-combatente {
+    border-color: #ff0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.2), inset 0 0 15px rgba(255, 0, 0, 0.1);
+}
+.ficha-container.classe-combatente .titulo-paranormal { color: #ff0000; text-shadow: 0 0 10px #660000; }
+.ficha-container.classe-combatente .btn-info-classe { border-color: #ff0000; }
+
+/* Pactário - Roxo Abissal */
+.ficha-container.classe-pactarios {
+    border-color: #8a2be2;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3), inset 0 0 15px rgba(138, 43, 226, 0.1);
+}
+.ficha-container.classe-pactarios .titulo-paranormal { color: #bf77ff; text-shadow: 0 0 10px #4b0082; }
+.ficha-container.classe-pactarios .btn-info-classe { border-color: #8a2be2; color: #bf77ff; }
+.ficha-container.classe-pactarios .btn-info-classe:hover { background: #4b0082; }
+
+/* Esotérico - Ciano Arcano */
+.ficha-container.classe-esoterico {
+    border-color: #00f2ff;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.2), inset 0 0 15px rgba(0, 242, 255, 0.1);
+}
+.ficha-container.classe-esoterico .titulo-paranormal { color: #00f2ff; text-shadow: 0 0 10px #005f66; }
+.ficha-container.classe-esoterico .btn-info-classe { border-color: #00f2ff; color: #00f2ff; }
+.ficha-container.classe-esoterico .btn-info-classe:hover { background: #005f66; color: white; }
+
+/* Transição suave para a mudança de cores */
+.ficha-container, .titulo-paranormal, .btn-info-classe {
+    transition: all 0.5s ease-in-out;
+}
+
+/* --- ESTILIZAÇÃO DO BOTÃO INFO OCUPAÇÃO --- */
+
+.btn-info-classe {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--vermelho-sangue);
+    color: #666; /* Cor neutra enquanto não selecionado */
+    padding: 20px; /* Ajustado para melhor harmonia visual */
+    font-family: var(--font-paranormal);
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 80px;
+    text-transform: uppercase;
+}
+
+/* Efeito de Hover Padrão */
+.btn-info-classe:hover {
+    background: var(--vermelho-sangue);
+    color: white;
+    box-shadow: 0 0 15px var(--vermelho-sangue);
+}
+
+/* O Efeito quando a Ocupação é alterada (Classe via JS) */
+.btn-info-classe.ativo {
+    border-color: var(--vermelho-brilhante);
+    color: var(--vermelho-brilhante);
+    box-shadow: 0 0 20px rgba(255, 26, 26, 0.3);
+    text-shadow: 0 0 8px var(--vermelho-sangue);
+    animation: glow-pulsar 2s infinite;
+}
+
+/* Animação Paranormal */
+@keyframes glow-pulsar {
+    0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 26, 26, 0.2); }
+    50% { transform: scale(1.02); box-shadow: 0 0 25px rgba(255, 26, 26, 0.5); }
+    100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 26, 26, 0.2); }
+}

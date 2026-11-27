@@ -1,0 +1,24 @@
+/* Cabeçalho */
+
+/* Header */
+.header-main {
+    text-align: center;
+    border-bottom: 2px solid var(--vermelho-sangue);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.titulo-paranormal {
+    font-family: var(--font-paranormal);
+    font-size: 3.5rem;
+    color: var(--vermelho-brilhante);
+    margin: 0;
+    text-shadow: 0 0 10px var(--vermelho-sangue);
+    letter-spacing: 8px;
+}
+
+.subtitulo {
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    color: #888;
+}
